@@ -78,3 +78,44 @@ In order to make our bash scripts executable we need to change linux permissions
 
 https://en.wikipedia.org/wiki/Chmod
 
+### Working with Env Vars
+
+We can list out all Environment variables (ENV vars) using the `env` command
+We can filter specific env vars using grep eg. `env | grep_AWS_`
+
+#### Setting and Unsetting ENV Vars
+
+In the terminal we can set using `export HELLO=world`
+
+In the terminal we can unset using `unset HELLO`
+
+We can set an env vars termporarily when just running a command
+```sh
+HELLO='world' ./bin/print_message
+```
+Withing a bash script we can set env without writing export eg.
+
+```sh
+#!/usr/bin/env bash
+
+HELLO 'world'
+
+echo $HELLO
+```
+
+#### Priting Vars
+
+We can print an env var using echo eg. `echo $HELLO`
+
+#### Scoping of Env Vars
+
+When you open up new bash terminals in VSCode it will not be aware of env vars that you have set in another window.
+If you want to Env Vars to persist across all future bash terminals that are open you need to set env vars in your bash profile. eg. `.bash_profile`
+
+#### Persisting Env Vars in Gitpod
+we can persist env vars into gitpod by storing them in gitpod Secrets Storage.
+
+```
+
+gp env HELLO='world'
+``
