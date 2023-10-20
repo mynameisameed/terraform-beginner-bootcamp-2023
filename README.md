@@ -231,3 +231,6 @@ Then open the file
   }
 }
 ```
+
+
+We have automated this workout with the following bash script [bin/generate_trfc_credentials](bin/generate_trfc_credentials)
