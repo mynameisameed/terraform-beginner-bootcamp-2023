@@ -5,7 +5,7 @@
 - [Semantic Versioning](#semantic-versioning)
 - [Install the Terraform CLI](#install-the-terraform-cli)
   - [considerations with the terraform cli changes](#considerations-with-the-terraform-cli-changes)
-  - [Refactoring Into Bash Scripts](#Refactoring into Bash Scripts)
+  - [Refactoring Into Bash Scripts](#Refactoring_into_Bash_Scripts)
 
 ## Semantic Versioning :mage:
 
