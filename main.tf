@@ -13,6 +13,6 @@ resource "aws_s3_bucket" "example" {
   bucket = random_string.bucket_name.result
 
   tags = {
-    useruuid = "var.user_uuid"
+    Useruuid = "var.user_uuid"
   }
 }
